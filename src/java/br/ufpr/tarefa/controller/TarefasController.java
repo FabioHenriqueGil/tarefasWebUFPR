@@ -66,7 +66,12 @@ public class TarefasController {
     }
     
     @RequestMapping("alteraTarefa")
-    public String altera(Tarefa tarefa) {
+    public String altera(@Valid Tarefa tarefa, BindingResult result) {
+        
+        if (result.hasFieldErrors("descricao")) {
+            return "tarefas/mostra";
+        }
+        
         JdbcTarefaDao dao = new JdbcTarefaDao();
         if (dao.buscaTarefa(tarefa.getId()).getFinalizado() == false && 
                 tarefa.getFinalizado() == true) {

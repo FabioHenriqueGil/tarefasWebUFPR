@@ -9,7 +9,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Nova Tarefa</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+        <script src="js/bootstrap.min.js"/>
     </head>
     <body>
         <h1>Adicionou!</h1>
