@@ -89,7 +89,7 @@ public class TarefasController {
         tarefa.setFinalizado(true);
         tarefa.setDataFinalizacao(Calendar.getInstance());
         dao.altera(tarefa);
-        
+        System.out.println("finalizou");
         response.setStatus(200);        
     }
     

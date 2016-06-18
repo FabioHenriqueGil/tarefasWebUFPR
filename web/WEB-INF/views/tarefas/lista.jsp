@@ -39,9 +39,9 @@
                                     <td>${tarefa.id}</td>
                                     <td>${tarefa.descricao}</td>
                                     <c:if test="${tarefa.finalizado eq false}">
-                                        <td id="tarefa_${tarefa.id}"><a href="#" onClick="finalizarAgora(${tarefa.id})"> Finalizar Agora</a></td>
+                                        <td id="#tarefa_${tarefa.id}"><a href="#" onClick="finalizarAgora(${tarefa.id})"> Finalizar Agora</a></td>
 
-                                        <td id="data_"${tarefa.id}>
+                                        <td id="#data_"${tarefa.id}>
 
                                         </td>
                                     </c:if>
@@ -89,7 +89,8 @@
             function finalizarAgora(id) {
                 $.get("finalizarTarefa?id=" + id, function () {
                     alert("Tarefa Finalizada ");
-                    $("tarefa_" + id).html("Finalizada Com Ajax");
+                    $("#tarefa_" + id).html("Finalizada Com Ajax");
+                    
                 });
 
             }
