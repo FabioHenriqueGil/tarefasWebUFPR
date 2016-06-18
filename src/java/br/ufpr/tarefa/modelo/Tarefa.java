@@ -5,6 +5,8 @@ import java.util.Calendar;
 import javax.servlet.jsp.tagext.ValidationMessage;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.web.bind.annotation.RequestBody;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -24,6 +26,7 @@ public class Tarefa {
     @NotNull(message = "{tarefa.descricao.vazia}") @Size(min = 5, max = 255, message = "{tarefa.descricao.tamanhoErrado}")
     private String descricao;
     private boolean finalizado;
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Calendar dataFinalizacao = Calendar.getInstance();
 
     public Tarefa() {

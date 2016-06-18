@@ -7,13 +7,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Adiona Contato</title>
-        <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../../../js/jquery/jquery-ui.css">
-        <script src="../../../js/bootstrap.min.js"></script>
+<!--        <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../js/jquery/jquery-ui.css">-->
+        <!--<script src="../../../js/bootstrap.min.js"></script>-->
         <!-- <script src="js/jquery/jquery-ui.js" ></script> -->
         <!-- <script src="js/jquery/jquery-1.9.1.js"></script> -->
-        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-        <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<!--        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>-->
 
     </head>
     <body>
